@@ -1,0 +1,135 @@
+# =============================================
+# GRADLE
+# =============================================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# =============================================
+# SERENITY BDD - REPORTES
+# =============================================
+target/
+site/
+serenity-reports/
+**/serenity/
+**/target/site/serenity/
+
+# =============================================
+# JAVA
+# =============================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# =============================================
+# MAVEN (por si se usa)
+# =============================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =============================================
+# INTELLIJ IDEA
+# =============================================
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# =============================================
+# ECLIPSE
+# =============================================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# =============================================
+# VS CODE
+# =============================================
+.vscode/
+
+# =============================================
+# NETBEANS
+# =============================================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# =============================================
+# DRIVERS (WebDriver binaries)
+# =============================================
+**/drivers/
+**/webdriver/
+chromedriver
+chromedriver.exe
+geckodriver
+geckodriver.exe
+msedgedriver
+msedgedriver.exe
+
+# =============================================
+# VARIABLES DE ENTORNO / CONFIGURACION LOCAL
+# =============================================
+.env
+.env.local
+*.properties.local
+serenity.local.properties
+
+# =============================================
+# LOGS
+# =============================================
+*.log
+logs/
+/log/
+
+# =============================================
+# SCREENSHOTS / EVIDENCIAS TEMPORALES
+# =============================================
+screenshots/
+**/screenshots/
+**/test-results/
+
+# =============================================
+# SISTEMA OPERATIVO
+# =============================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
