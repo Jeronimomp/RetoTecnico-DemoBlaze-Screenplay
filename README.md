@@ -9,9 +9,9 @@ Patrón:       Screenplay
 Lenguaje:     Java 17
 Build Tool:   Gradle (Kotlin DSL)
 
-================================
+=============
 1. DESCRIPCIÓN DEL PROYECTO
-   ==============================
+   ===========
 
 Este proyecto automatiza el flujo principal de compra de un producto en el sitio
 web Demoblaze, validando los siguientes pasos:
@@ -23,9 +23,9 @@ web Demoblaze, validando los siguientes pasos:
 5. Realizar el pedido completando los datos del cliente.
 6. Verificar el mensaje de confirmación de compra exitosa.
 
-================================
+==============
 2. REQUISITOS PREVIOS
-   =========================
+   ==============
 
 Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
@@ -47,9 +47,9 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
   * Gherkin
   * Lombok
 
-================================
+==============
 3. ESTRUCTURA DEL PROYECTO
-   =============================
+   =============
 
 Demoblaze/
 │
@@ -86,16 +86,16 @@ Demoblaze/
 └── feature/
 └── ComprarProducto.feature   -> Escenarios en Gherkin
 
-============================
+==============
 4. CLONAR EL PROYECTO
-   ==========================
+   ============
 
-git clone <URL-del-repositorio>
+git clone https://github.com/Jeronimomp/RetoTecnico-DemoBlaze-Screenplay.git
 cd Demoblaze
 
-=======================================
+==============
 5. INSTALACIÓN DE DEPENDENCIAS
-   ====================================
+   ============
 
 Las dependencias se descargan automáticamente con Gradle al ejecutar cualquier
 tarea. También puedes forzar la descarga con:
@@ -106,9 +106,9 @@ En Windows:
 En Linux/Mac:
 ./gradlew build -x test
 
-==================================
+=============
 6. EJECUCIÓN DE LAS PRUEBAS
-   ===============================
+   ============
 
 --- Opción A: Ejecución completa desde la terminal ---
 
@@ -133,9 +133,9 @@ En Linux/Mac:
 2. Click derecho sobre el escenario.
 3. Seleccionar "Run Scenario".
 
-==================================
+=============
 7. GENERACIÓN DE REPORTES
-   ================================
+   ============
 
 Serenity genera un reporte HTML detallado al finalizar las pruebas.
 
@@ -153,9 +153,9 @@ Abrir el archivo "index.html" en el navegador para visualizar:
 - Tiempos de ejecución
 - Trazabilidad de requisitos
 
-====================================
+==============
 8. CONFIGURACIÓN PERSONALIZABLE
-   ==================================
+   ============
 
 Archivo: serenity.properties
 
@@ -167,9 +167,9 @@ Propiedades más importantes:
        serenity.take.screenshots=AFTER_EACH_STEP
        webdriver.wait.for.timeout=10000     -> Timeout en milisegundos
 
-==================================
+=============
 9. ESCENARIO AUTOMATIZADO
-   ================================
+   ==============
 
 Feature: Comprar producto en demoblaze
 
@@ -184,9 +184,9 @@ Feature: Comprar producto en demoblaze
         | Juan   | USA  | New York | 1234 5678 9012 3456 | 12  | 2025 |
       Then Debería ver un mensaje de confirmación de compra exitosa
 
-=======================================
+============
 10. SOLUCIÓN DE PROBLEMAS COMUNES
-    ====================================
+    ===========
 
 * Error: "Cannot access net.serenitybdd.core.pages.ResolvableElement"
   -> Recargar el proyecto Gradle desde IntelliJ (botón de "Sync").
@@ -206,9 +206,9 @@ Feature: Comprar producto en demoblaze
   File > Settings > Build > Compiler > Annotation Processors
   Marcar "Enable annotation processing".
 
-=======================================
+=========
 11. DEPENDENCIAS PRINCIPALES
-    ====================================
+    =========
 
 - net.serenity-bdd:serenity-core:4.1.20
 - net.serenity-bdd:serenity-screenplay:4.1.20
@@ -220,15 +220,15 @@ Feature: Comprar producto en demoblaze
 - org.assertj:assertj-core:3.25.1
 - org.projectlombok:lombok:1.18.30
 
-====================================
+=======
 12. AUTOR
-    ================================
+    =======
 
 Autor:        Angel Marzola
 Empresa:      Sofka Technologies
 Tipo:         Prueba Técnica - Automatización Web
 Fecha:        2026
 
-=============================
+=========
 FIN DEL DOCUMENTO
-==============================
+==========
