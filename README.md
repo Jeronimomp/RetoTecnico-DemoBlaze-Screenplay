@@ -1,5 +1,5 @@
 
-AUTOMATIZACIÓN DE PRUEBAS - COMPRA EN LÍNEA EN DEMOBLAZE
+# AUTOMATIZACIÓN DE PRUEBAS - COMPRA EN LÍNEA EN DEMOBLAZE
 
 
 Proyecto:     Demoblaze Automation
@@ -23,7 +23,7 @@ web Demoblaze, validando los siguientes pasos:
 5. Realizar el pedido completando los datos del cliente.
 6. Verificar el mensaje de confirmación de compra exitosa.
 
-
+================================
 2. REQUISITOS PREVIOS
    =========================
 
@@ -47,7 +47,7 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
   * Gherkin
   * Lombok
 
-
+================================
 3. ESTRUCTURA DEL PROYECTO
    =============================
 
