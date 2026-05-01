@@ -11,10 +11,7 @@ import org.junit.runner.RunWith;
                 "com.demoblaze.stepdefinitions",
                 "com.demoblaze.hooks"
         },
-        plugin = {
-                "pretty",
-                "json:target/cucumber-reports/realizarCompra.json"
-        },
+        plugin = {"pretty"},
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class RunnerRealizarCompra {

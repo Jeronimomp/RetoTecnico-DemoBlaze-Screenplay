@@ -1,6 +1,5 @@
 package com.demoblaze.hooks;
 
-import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -11,18 +10,15 @@ import org.openqa.selenium.WebDriver;
 public class Principal {
 
     @Managed
-    WebDriver driver;
+    WebDriver chromeDriver;
+
+     WebDriver driver = chromeDriver;
 
     @Before
     public void config(){
         OnStage.setTheStage(new OnlineCast()) ;
-        OnStage.theActorCalled("cliente");
-        OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(driver));
+        OnStage.theActorCalled("cliente").can(BrowseTheWeb.with(driver));
 
     }
 
-    @After
-    public void cerrarNavegador(){
-        driver.quit();
-    }
 }

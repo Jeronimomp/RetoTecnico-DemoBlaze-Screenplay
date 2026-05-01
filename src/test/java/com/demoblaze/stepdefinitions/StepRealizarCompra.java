@@ -16,9 +16,8 @@ import static org.hamcrest.Matchers.is;
 
 public class StepRealizarCompra {
 
-
-    @Given("El usuario está en la página de inicio de demoblaze")
-    public void elUsuarioEstáEnLaPáginaDeInicioDeDemoblaze() {
+    @Given("El usuario esta en la pagina de inicio de demoblaze")
+    public void elUsuarioEstaEnLaPaginaDeInicioDeDemoblaze() {
         OnStage.theActorInTheSpotlight().wasAbleTo(AbrirPagina.laPaginaDeInicio());
 
     }
@@ -55,8 +54,8 @@ public class StepRealizarCompra {
 
     }
 
-    @Then("Debería ver un mensaje de confirmación de compra exitosa")
-    public void deberíaVerUnMensajeDeConfirmaciónDeCompraExitosa() {
+    @Then("Deberia ver un mensaje de confirmacion de compra exitosa")
+    public void deberiaVerUnMensajeDeConfirmacionDeCompraExitosa() {
         OnStage.theActorInTheSpotlight().should(
                 GivenWhenThen.seeThat("El mensaje de compra exitosa", ValidaCompraExitosa.mensajeCompraExitosa(),
                         is(in(Constantes.MENSAJES_EXITO_COMPRA)))
